@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav id="nav" class="flex">
+        <h1>sorting visualiser</h1>
+        <div class="buttons flex">
+            <button>Bubble</button>
+            <button>Selection</button>
+            <button>Insertion</button>
+            <button>Quick</button>
+            <button>Merge</button>
+            <button>Heap </button>
+        </div>
+    </nav>
+
+    <!-- div for control -->
+    <!-- bar container for sorting-->
+    <div id="main-container" class="flex">
+        <div id="control" class="flex">
+            <div class="range">
+                <div class="array-size">
+                    <label for="array-size">array size:</label>
+                    <input type="range" name="array-size" id="array-size" min="10" max="250" value="50">
+                </div>
+                <div class="sort-speed">
+                    <label for="sort-speed">sorting speed:</label>
+                    <input type="range" name="sort-speed" id="sort-speed" min="1" max="5" step="1">
+                </div>
+            </div>
+            <button class="create-array">create new array</button>
+        </div>
+
+        <div id="bar-container" class="flex">
+
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/visualise.js"></script>
+    <script src="./js/bubbleSort.js"></script>
+    <script src="./js/selectionSort.js"></script>
+    <script src="./js/insertionSort.js"></script>
+    <script src="./js/quickSort.js"></script>
+    <script src="./js/mergeSort.js"></script>
+    <script src="./js/heapSort.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+:root {
+    --primary-bg-color: #283747;
+    --primary-hover-color: #1a252f;
+    --body-bg-color: #979A9A;
+    --primary-font-color: white;
+    --sec-btn-color: #5F6A6A;
+    --sec-btn-hover-color: #424949;
+
+    --primary-btn-font-size: 1.2rem;
+    --primary-btn-font-weight: 700;
+    --sec-btn-font-size: 1rem;
+
+    --nav-height: 20vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+
+
+/* utility class */
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    font-size: var(--primary-btn-font-size);
+    font-weight: var(--primary-btn-font-weight);
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.selected-btn {
+    background-color: white !important;
+    color: black !important;
+}
+
+
+
+/* nav bar */
+
+#nav {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-font-color);
+    flex-direction: column;
+    min-height: var(--nav-height);
+    /* min-height: fit-content; */
+    padding: 0.5rem 2rem;
+}
+
+    #nav button {
+        border: none;
+        color: var(--primary-font-color);
+        background-color: var(--primary-bg-color);
+    }
+
+    #nav button:hover {
+        background-color: var(--primary-hover-color);
+    }
+
+    #nav .buttons {
+        width: 80%;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+
+/* main container */
+
+#main-container {
+    height: calc(100vh - var(--nav-height));
+}
+
+
+/* left-controlling div */
+
+#control {
+    background-color: var(--primary-bg-color);
+    width: 18vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: calc(var(--nav-height) / 2) 0.5rem;
+    text-align: center;
+    color: var(--primary-font-color);
+}
+
+    label {
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    #control .range input {
+        margin-top: 0.3rem;
+        cursor: pointer;
+    }
+
+    #control button {
+        background-color: var(--sec-btn-color);
+        font-size: var(--sec-btn-font-size);
+        border: 2px solid black;
+        color: var(--primary-font-color)
+    }
+
+    #control button:hover {
+        background-color: var(--sec-btn-hover-color);
+    }
+
+    
+
+/* bar container for sorting */
+
+#bar-container {
+    height: 95%;
+    width: 90%;
+    margin-inline: 2%;
+    border-bottom: 5px solid #000;
+}
+
+#bar-container {
+    align-items: end;
+    justify-content: space-between;
+}
