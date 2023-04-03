@@ -1,0 +1,39 @@
+
+@media screen and (max-width: 768px){
+
+    :root {
+        --control-div-bg-color: #34495E;
+    }
+    
+    /* nav bar */
+
+    #nav .buttons {
+        flex-wrap: wrap;
+    }
+
+    #nav .buttons button {
+        width: 32%;
+    }
+
+
+
+    /* main container */
+
+    #main-container {
+        flex-direction: column;
+    }
+
+    /* left-controlling div */
+
+    #control {
+        width: 100%;
+        flex-direction: row;
+        height: fit-content;
+        background-color: var(--control-div-bg-color);
+        padding-block: 1vh; 
+    }
+
+    #bar-container {
+        margin-bottom: 3vh;
+    }
+}
