@@ -12,3 +12,6 @@ there are different colours used in this project:
 -> black: used for two algorithms: merge sort and quick sort:
           for merge sort: it indicates the mid element of the array passed
           for quick sort: it indicates the pivot element of the array;
+
+
+Live link: https://shashi675.github.io/sorting-algo-visualiser/
